@@ -1,14 +1,10 @@
 .sb {
-  background-color: #140005;
-  display: flex;
-  width: 8rem;
-  height: 100%;
-}
-
-.sb ul {
+  position: fixed;
   display: flex;
   flex-direction: column;
-  width: 100%;
-  margin: 1rem 0;
-  padding: 0;
+  // justify-content: space-between;
+  width: 8rem;
+  height: 100%;
+  background-color: #E5E8E8;
+  z-index: 100;
 }

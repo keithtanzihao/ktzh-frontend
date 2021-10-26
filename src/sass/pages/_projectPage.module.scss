@@ -1,0 +1,18 @@
+.pj-ctn {
+  position: relative;
+  width: 100vh;
+  height: 100vw;
+  z-index: 200;
+  -webkit-transform: rotate(-90deg) translateX(-100%) translateZ(0);
+  transform: rotate(-90deg) translateX(-100%) translateZ(0);
+  transform-origin: 0 0;
+}
+
+.pj-ctn ul {
+  width: 100vh;
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding: calc(8rem + 5px) 0 0 0;
+}
+
