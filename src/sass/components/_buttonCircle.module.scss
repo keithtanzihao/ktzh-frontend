@@ -1,0 +1,29 @@
+.btn-cir {
+  position: relative;
+  z-index: 101;
+  display: flex;
+  justify-content: center;
+  transform: scale(1);
+  transition-duration: 0.5s;
+  margin: 0 4rem;
+  padding: 0.8rem;
+  border-radius: 48px;
+  background-color: $spearmint;
+}
+
+.btn-cir:hover {
+  transform: scale(1.2);
+  transition-duration: 0.5s;
+  background-color: aquamarine;
+  
+}
+
+.btn-cir__line--top {
+  transform: rotate(45deg) translateY(2px); 
+  transform-origin: center;
+}
+
+.btn-cir__line--btm {
+  transform: rotate(-45deg) translateY(-2px);
+  transform-origin: center;
+}

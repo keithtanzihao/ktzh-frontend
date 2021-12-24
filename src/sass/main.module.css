@@ -1,3 +1,309 @@
+/* 
+z-index values
+  .blk__pj__img     10
+  .blk__pj__title   11
+  .btn-exp          12
+  .nb               100
+*/
+.app {
+  position: relative;
+  width: 100vw;
+  height: 100%;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  margin: 0px;
+  padding: 0px;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.md-menu {
+  position: fixed;
+  z-index: 90;
+  width: 100vw;
+  height: 100vh;
+  background-color: #000401;
+}
+
+.nb-icon-ctn {
+  display: flex;
+  flex-direction: column;
+  margin: 0 3rem;
+}
+
+.nb-icon {
+  width: 3.8rem;
+  height: auto;
+  color: #000401;
+}
+
+.nb-menu__ctn--open {
+  display: flex;
+  align-items: center;
+  margin: 0 4rem;
+  padding: 0.8rem;
+  border-radius: 48px;
+  background-color: #2E765E;
+}
+
+.nb-ctn {
+  position: relative;
+  display: flex;
+  border-radius: 24px;
+  background-color: orange;
+}
+
+.nb-item {
+  display: flex;
+  align-items: center;
+  margin: 0.5rem;
+  padding: 0.5rem 1rem;
+  border-radius: 24px;
+  font-size: 1.1rem;
+}
+
+.fill__ctn {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin: 4rem auto;
+  padding: 1rem 0;
+  width: 50%;
+  height: 5rem;
+  border-radius: 48px;
+  background-color: #2E765E;
+}
+
+.fill__item {
+  position: relative;
+  width: 20%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style-type: none;
+  font-size: 2rem;
+  font-family: "gilroy-bold";
+  opacity: 0.3;
+}
+
+.fill__item--selected {
+  position: relative;
+  width: 20%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style-type: none;
+  font-size: 2rem;
+  font-family: "gilroy-bold";
+  opacity: 1;
+}
+
+.fill__item__cover {
+  position: absolute;
+  border-radius: 48px;
+  width: 100%;
+  height: 100%;
+  background-color: #B1D8B7;
+}
+
+.blk__ctn {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 24px;
+}
+
+.blk__pj__img {
+  position: relative;
+  z-index: 10;
+  width: 100%;
+  height: 100%;
+}
+
+.blk__pj__title {
+  position: absolute;
+  bottom: 0;
+  z-index: 11;
+  margin: 0.5rem 0rem;
+  padding: 0;
+  font-family: "gilroy-extrabold";
+  font-size: 4rem;
+}
+
+.btn-exp {
+  position: absolute;
+  z-index: 12;
+  display: inline-block;
+  border: none;
+  border-radius: 24px;
+  background-color: violet;
+}
+
+.btn-exp:hover {
+  box-shadow: black 0rem 0rem 0rem 0.3rem;
+  background-color: orange;
+}
+
+.btn-exp p {
+  font-family: "gilroy-extrabold";
+  font-size: 4rem;
+  margin: 0;
+}
+
+.btn-exp__icon {
+  color: black;
+}
+
+.btn-exp__icon__ctn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn-link {
+  position: relative;
+  top: 10rem;
+  margin: 0 10rem;
+  font-family: "gilroy-bold";
+  font-size: 1.5rem;
+}
+
+.btn-link__a {
+  border-bottom: 2px solid;
+  text-decoration: none;
+  color: black;
+}
+
+.btn-link__icon {
+  position: relative;
+  top: 0.2rem;
+  margin: 0 0 0 0.5rem;
+  font-size: 1.8rem;
+}
+
+.btn-cir {
+  display: flex;
+  justify-content: center;
+  margin: 4rem;
+  padding: 0.8rem;
+  border-radius: 48px;
+  background-color: #2E765E;
+}
+
+.btn-cir__line--top {
+  transform: rotate(45deg) translateY(2px);
+  transform-origin: center;
+}
+
+.btn-cir__line--btm {
+  transform: rotate(-45deg) translateY(-2px);
+  transform-origin: center;
+}
+
+.nb {
+  position: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100vw;
+  height: 8rem;
+  z-index: 100;
+}
+
+.mainSec {
+  position: relative;
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+}
+
+.mainSec__ctn--light {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 50vw;
+  background-color: #E5E8E8;
+}
+
+.mainSec__ctn--dark {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  width: 50vw;
+  background-color: #2E765E;
+}
+
+.mainSec__intro {
+  display: flex;
+  flex-direction: column;
+  margin: 0 10rem;
+  line-height: 0.95;
+  font-size: 8rem;
+  font-family: "gilroy-extrabold";
+}
+
+.mainSec__span {
+  font-size: 5rem;
+}
+
+.bs {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  max-width: 1500px;
+  height: 100vh;
+}
+
+.bs__ctn {
+  position: relative;
+  top: 2rem;
+  width: 100%;
+}
+
+.bs__test {
+  background-color: #E5E8E8;
+}
+
+.bs__blk {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 24px;
+  background-color: #2E765E;
+}
+
+.yelp {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  z-index: 100;
+}
+
+.yelp__btn-ctn {
+  display: flex;
+  align-items: center;
+  height: 8rem;
+}
+
 /*! Generated by Font Squirrel (https://www.fontsquirrel.com) on July 5, 2021 */
 @font-face {
   font-family: "gilroy-black";
@@ -131,67 +437,6 @@
   src: url("./Lato/lato-thinitalic-webfont.woff") format("woff");
   font-weight: normal;
   font-style: normal;
-}
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  background-color: #8D9797;
-}
-
-.app {
-  display: flex;
-  height: 100vh;
-  width: 100vw;
-}
-
-.sb {
-  position: fixed;
-  display: flex;
-  flex-direction: column;
-  width: 8rem;
-  height: 100%;
-  background-color: #E5E8E8;
-  z-index: 100;
-}
-
-.sb-icon-ctn {
-  display: flex;
-  flex-direction: column;
-  margin: 2rem 0;
-}
-
-.sb-item-base, .sb-icon-name, .sb-icon {
-  position: relative;
-  left: 1rem;
-}
-
-.sb-icon {
-  color: #000401;
-  width: 3.8rem;
-  height: auto;
-}
-
-.sb-icon-name {
-  margin: 0.3rem 0 0 0.3rem;
-  font-size: 1.2rem;
-  font-family: "gilroy-bold";
-}
-
-.sb-menu-ctn {
-  display: flex;
-  justify-content: center;
-}
-
-.md-menu {
-  position: fixed;
-  top: 0;
-  left: 8rem;
-  width: calc(100vw - 8rem);
-  height: 100vh;
-  z-index: 90;
-  background-color: #000401;
 }
 
 /*# sourceMappingURL=main.module.css.map */

@@ -1,0 +1,12 @@
+@mixin nb-menu__ctn {
+  display: flex;
+  align-items: center;
+  margin: 0 4rem;
+  padding: 0.8rem;
+  border-radius: 48px;
+  background-color: $spearmint;
+}
+
+.nb-menu__ctn--open {
+  @include nb-menu__ctn
+}

@@ -1,5 +1,6 @@
-@use 'indexPage.module';
-@use 'app.module';
+@import 'mainSection.module';
+@import 'blockSection.module';
 
-@use 'projectPage.module'
+@import 'yelpPage.module';
+
 

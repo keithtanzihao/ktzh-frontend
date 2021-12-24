@@ -3,22 +3,25 @@ import React from 'react'
 import styles from 'sass/main.module.scss'
 
 import ModalOverlay from '../modal/ModalOverlay'
-import SidebarIcon from './SidebarIcon'
-import SidebarMenu from './SidebarMenu'
+import NavbarIcon from './NavbarIcon'
+import NavbarMenu from './NavbarMenu'
 
-export default function Sidebar() {
+import ButtonCircle from '../button/ButtonCircle'
+
+export default function Navbar() {
   const [isOpen, setOpen] = React.useState(false)
   const handleOpen = function () {
     setOpen(!isOpen)
   }
 
   return (
-    <nav className={`${styles['sb']}`}>
+    <nav className={`${styles['nb']}`}>
       
       {(isOpen === true) && <ModalOverlay isOpen={isOpen}/>}
       
-      <SidebarIcon />
-      <SidebarMenu
+      <NavbarIcon />
+      {/* <NavbarCtn/> */}
+      <NavbarMenu
         isOpen={isOpen}
         transition={{ duration: 0.8 }}
         onClick={handleOpen}

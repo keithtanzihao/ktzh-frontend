@@ -1,0 +1,28 @@
+.bs {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  max-width: 1500px;
+  height: 100vh;
+  // height: calc(100vh - 6rem);
+}
+
+.bs__ctn {
+  position: relative;
+  top: 2rem;
+  width: 100%;
+}
+
+.bs__test {
+  background-color: $zircon;
+}
+
+.bs__blk {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 24px;
+  // padding: 1rem;
+  background-color: $spearmint;
+}

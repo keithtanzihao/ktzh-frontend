@@ -1,0 +1,40 @@
+@mixin mainSec__ctn {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+}
+
+.mainSec {
+  position: relative;
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+}
+
+.mainSec__ctn--light {
+  @include mainSec__ctn;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 50vw;
+  background-color: $zircon;
+}
+
+.mainSec__ctn--dark {
+  @include mainSec__ctn;
+  width: 50vw;
+  background-color: $spearmint;
+}
+
+.mainSec__intro {
+  display: flex;
+  flex-direction: column;
+  margin: 0 10rem;
+  line-height: 0.95;
+  font-size: 8rem;
+  font-family: 'gilroy-extrabold';
+}
+
+.mainSec__span {
+  font-size: 5rem;
+}
