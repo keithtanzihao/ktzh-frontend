@@ -9,8 +9,8 @@ export default function Frontpage() {
   return (
     <React.Fragment>
       <Navbar />
-      {/* <MainSection /> */}
-      {/* <BlockSection /> */}
+      <MainSection />
+      <BlockSection />
 
       <YelpPage/>
     </React.Fragment>
