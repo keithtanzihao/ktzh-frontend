@@ -10,11 +10,14 @@ import BlockSection from 'components/frontpage/BlockSection'
 export default function App() {
   return (
     <div className={`${styles['app']}`}>
-      <Routes>
-        {/* <Route path="/main" element={<MainSection />} /> */}
-        {/* <Route path="/block" element={<BlockSection />} /> */}
+      {/* <Routes>
+        <Route path="/main" element={<MainSection />} />
+        <Route path="/block" element={<BlockSection />} />
         <Route path="/block" element={<Frontpage />} />
-      </Routes>
+      </Routes> */}
+      <MainSection />
+      <BlockSection />
+      {/* <Frontpage /> */}
     </div>
   )
 }
